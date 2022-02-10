@@ -1,8 +1,6 @@
 import React from "react";
 
-import "../../index";
-
-import NavBar from "../Navbar/Navbar";
+// import NavBar from "../Navbar/Navbar";
 import Hero from "./Hero";
 
 import { Layout, Menu, Breadcrumb, Divider } from "antd";
@@ -13,17 +11,17 @@ const { Header, Content, Footer } = Layout;
 const Home = () => {
   return (
     <Layout>
-      {/* <Header> */}
-      <NavBar />
-      {/* <div className="logo" /> */}
-      {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
+      <Header>
+        {/* <NavBar /> */}
+        {/* <div className="logo" /> */}
+        {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
           {new Array(15).fill(null).map((_, index) => {
             const key = index + 1;
             return <Menu.Item key={key}>{`nav ${key}`}</Menu.Item>;
           })}
         </Menu> */}
-      {/* </Header> */}
-      {/* <Divider /> */}
+      </Header>
+      <Divider />
       {/* <Content style={{ padding: "0 50px" }}> */}
       <Content>
         {/* <Breadcrumb style={{ margin: "16px 0" }}>

@@ -1,13 +1,11 @@
 import React from "react";
 
 import { Row, Col } from "antd";
+
 import styled from "styled-components";
 
 const HeroContent = styled.div`
-  min-height: 280px;
-  padding: 24px;
-  /* background: #fff; */
-  background: #ff7f50;
+  font-color: white;
 `;
 
 const Hero = () => {

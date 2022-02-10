@@ -1,7 +1,13 @@
 .App {
   text-align: center;
+  background-image: url("https://3.bp.blogspot.com/--LrzzHcQ2cY/XHXEgPWHN6I/AAAAAAAAC68/f8sokzVFYg8zZ0DVZuxx-R9_1jcACZAAwCKgBGAs/w5120-h2880-c/mountain-night-scenery-stars-landscape-anime-4K-84.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
