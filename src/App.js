@@ -6,7 +6,7 @@ import Home from "./components/Home/Home.jsx";
 function App() {
   return (
     <>
-      <div className="App"></div>
+      <div className="App">Some text</div>
       <Home />
     </>
   );

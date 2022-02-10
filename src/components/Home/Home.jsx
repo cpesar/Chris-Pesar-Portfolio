@@ -17,7 +17,7 @@ const Home = () => {
       <Divider />
       {/* <Content style={{ padding: "0 50px" }}> */}
       <Content>
-        <Hero />
+        <Hero style={{ color: "white" }} />
         {/* <div className="site-layout-content">Content</div> */}
       </Content>
       <Footer style={{ textAlign: "center", color: "white" }}>

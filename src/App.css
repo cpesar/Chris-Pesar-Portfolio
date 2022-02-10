@@ -6,6 +6,7 @@
   min-height: 100%; */
   background-size: conver;
   background-position: center;
+  filter: contrast(1.35) brightness(0.65);
 }
 
 .App-logo {
