@@ -82,10 +82,6 @@ const Hero = () => {
           Col
         </Col>
       </Row>
-
-      {/* <Row align="middle">
-        <Col style={HeroStyle} xs={24} xl={24} xxl={24}></Col>
-      </Row> */}
     </>
   );
 };

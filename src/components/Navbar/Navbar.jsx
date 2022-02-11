@@ -1,7 +1,6 @@
 import React from "react";
 
 import "antd/dist/antd.css";
-// import { PageHeader } from "antd";
 import { Row, Col } from "antd";
 
 import styled from "styled-components";
@@ -24,13 +23,13 @@ const NavStyle = {
 const NavBar = () => {
   return (
     <>
-      <Row align="middle">
-        <Col style={NavStyle} xl={18} xxl={12}>
+      <Row>
+        <Col style={NavStyle} xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
           <NavWrapper>
             <NavName>Chris Pesar</NavName>
           </NavWrapper>
         </Col>
-        <Col style={NavStyle} xl={3} xxl={12}>
+        <Col style={NavStyle} xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
           <NavWrapper>
             <NavName>Menu</NavName>
           </NavWrapper>
