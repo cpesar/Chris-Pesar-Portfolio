@@ -11,9 +11,9 @@ const { Header, Content, Footer } = Layout;
 const Home = () => {
   return (
     <Layout>
-      <Header>
-        <NavBar />
-      </Header>
+      {/* <Header style={{ background: "transparent", color: "palevioletred" }}> */}
+      <NavBar />
+      {/* </Header> */}
       <Divider />
       {/* <Content style={{ padding: "0 50px" }}> */}
       <Content>

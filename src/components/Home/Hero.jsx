@@ -72,7 +72,11 @@ const Hero = () => {
           Col
         </Col>
         <Col style={HeroStyle} xs={20} xxl={16} xl={18}>
-          Col
+          <Wrapper>
+            <Title>
+              I like to build stuff on the internet <br />
+            </Title>
+          </Wrapper>
         </Col>
         <Col style={HeroStyle} xs={2} xxl={4} xl={3}>
           Col
