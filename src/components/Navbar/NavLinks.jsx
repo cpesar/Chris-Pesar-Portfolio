@@ -2,14 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const NavLinksContainer = styled.div`
-  background: transparent !important;
   height: 100%;
   display: flex;
   align-items: center;
 `;
 
 const LinksWrapper = styled.ul`
-  background: transparent !important;
   margin: 0;
   padding: 0;
   display: flex;
@@ -18,7 +16,6 @@ const LinksWrapper = styled.ul`
 `;
 
 const LinkItem = styled.li`
-  background: transparent !important;
   height: 100%;
   padding: 0 1.1em;
   /* color: #222; */
@@ -37,7 +34,6 @@ const LinkItem = styled.li`
 `;
 
 const Link = styled.a`
-  background: transparent !important;
   text-decoration: none;
   color: inherit;
   font-size: inherit;

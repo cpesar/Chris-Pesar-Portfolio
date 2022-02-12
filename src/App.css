@@ -6,6 +6,9 @@
   filter: contrast(1.35) brightness(0.65);
 }
 
+.body {
+  background-color: #ffffff;
+}
 .App {
   text-align: center;
 }

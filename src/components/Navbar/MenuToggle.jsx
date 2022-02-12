@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = styled.div`
-  background: transparent !important;
   z-index: 99;
   cursor: pointer;
   margin-right: 25px;
