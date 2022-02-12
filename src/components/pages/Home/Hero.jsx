@@ -20,11 +20,11 @@ const Wrapper = styled.section`
 const Title = styled.h1`
   font-size: 5em;
   text-align: center;
-  color: palevioletred;
+  color: #ffffff;
 `;
 
 const WordList = styled.span`
-  color: darkorange;
+  color: #ffff00;
 `;
 
 const Hero = () => {

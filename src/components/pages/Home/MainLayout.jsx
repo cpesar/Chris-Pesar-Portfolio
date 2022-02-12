@@ -1,7 +1,7 @@
 import React from "react";
 
 import Hero from "./Hero";
-import NavBar from "../Navbar/Navbar";
+import NavBar from "../../Navbar/index";
 import Footer from "./Footer";
 
 import { Layout, Menu, Breadcrumb, Divider } from "antd";
@@ -13,10 +13,10 @@ const MainLayout = () => {
   return (
     <Layout>
       <NavBar />
-      <Divider />
+      {/* <Divider /> */}
 
       <Content>
-        <Hero style={{ color: "white" }} />
+        <Hero />
       </Content>
 
       <Divider />

@@ -12,7 +12,7 @@ const FooterWrapper = styled.div`
 const FooterName = styled.div`
   font-size: 2em;
   /* text-align: center; */
-  color: palevioletred;
+  color: #1e90ff;
 `;
 
 const FooterStyle = {
