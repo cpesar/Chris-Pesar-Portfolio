@@ -13,7 +13,6 @@ const MainLayout = () => {
   return (
     <Layout>
       <NavBar />
-      {/* <Divider /> */}
 
       <Content>
         <Hero />

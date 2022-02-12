@@ -6,17 +6,23 @@ import { Row, Col } from "antd";
 import styled from "styled-components";
 
 const FooterWrapper = styled.div`
-  background: transparent !important;
+  /* background: transparent !important; */
+
+  /* Allows the text to show over the background image */
+  /* position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent); */
 `;
 
 const FooterName = styled.div`
-  font-size: 2em;
+  font-size: 1em;
   /* text-align: center; */
   color: #1e90ff;
 `;
 
 const FooterStyle = {
-  border: "1px solid white",
+  // border: "1px solid white",
   height: "80px",
 };
 

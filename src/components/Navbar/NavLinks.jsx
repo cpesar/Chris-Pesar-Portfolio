@@ -18,7 +18,7 @@ const LinksWrapper = styled.ul`
 const LinkItem = styled.li`
   height: 100%;
   padding: 0 1.1em;
-  /* color: #222; */
+
   color: #ffff00;
   font-weight: 500;
   font-size: 14px;
@@ -44,16 +44,13 @@ function NavLinks(props) {
     <NavLinksContainer>
       <LinksWrapper>
         <LinkItem>
-          <Link href="#">About us</Link>
+          <Link href="#">About</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">How it works</Link>
+          <Link href="#">Projects</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Explore</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="#">Impact</Link>
+          <Link href="#">Contact</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>

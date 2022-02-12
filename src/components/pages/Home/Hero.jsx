@@ -8,7 +8,7 @@ import "antd/dist/antd.css";
 import styled from "styled-components";
 
 const HeroStyle = {
-  border: "1px solid white",
+  // border: "1px solid white",
   height: "800px",
 };
 
