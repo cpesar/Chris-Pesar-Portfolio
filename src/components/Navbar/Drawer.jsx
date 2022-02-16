@@ -10,6 +10,9 @@ import {
   IconButton,
 } from "@mui/material";
 
+import { makeStyles } from "@mui/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 import MenuIcon from "@mui/icons-material/Menu";
 
 function DrawerComponent() {

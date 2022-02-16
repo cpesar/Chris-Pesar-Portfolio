@@ -11,16 +11,28 @@ import {
   useMediaQuery,
 } from "@mui/material";
 
+// import { makeStyles } from "@mui/styles";
+// import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 import CodeIcon from "@mui/icons-material/Code";
 
 import DrawerComponent from "./Drawer";
 
 function Navbar() {
+  // const theme = createTheme();
   const theme = useTheme();
+
+  // const useStyles = makeStyles((theme) => ({
+  //   background: theme.palette.primary.main,
+  // }));
+  // const classes = useStyles();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
+    // <ThemeProvider>
     <AppBar
+      // className={classes.root}
+      // enableColorOnDark
       sx={{
         bgcolor: "transparent",
       }}
@@ -110,6 +122,7 @@ function Navbar() {
         )}
       </Toolbar>
     </AppBar>
+    // </ThemeProvider>
   );
 }
 
