@@ -20,13 +20,13 @@ const classes = {
   },
 };
 
-function Contact() {
+function Home() {
   return (
     <div style={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={3} style={classes.paper}>
-            Contact Page
+            Home Page
           </Paper>
         </Grid>
       </Grid>
@@ -42,4 +42,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Home;
