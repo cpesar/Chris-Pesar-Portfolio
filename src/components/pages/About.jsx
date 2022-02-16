@@ -2,8 +2,6 @@ import * as React from "react";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
-// import { Link } from "react-router-dom";
-
 const classes = {
   root: {
     flexGrow: 1,
@@ -14,23 +12,21 @@ const classes = {
     textAlign: "center",
     color: "blue",
     fontSize: "100px",
-
     fontFamily: "Roboto",
     height: 800,
     width: "96vw",
-    backgroundColor: "green",
+    backgroundColor: "transparent",
     border: "10px solid blue",
   },
 };
 
 function About() {
   return (
-    // <Link>
     <div style={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={3} style={classes.paper}>
-            Grid 1
+            About Page
           </Paper>
         </Grid>
       </Grid>
@@ -43,7 +39,6 @@ function About() {
         </Grid>
       </Grid>
     </div>
-    // </Link>
   );
 }
 
