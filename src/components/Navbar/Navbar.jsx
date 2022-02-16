@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
-  CssBaseline,
+  // CssBaseline,
   Typography,
   useTheme,
   useMediaQuery,
@@ -15,114 +15,75 @@ import {
 // import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import CodeIcon from "@mui/icons-material/Code";
-
 import DrawerComponent from "./Drawer";
 
-function Navbar() {
-  // const theme = createTheme();
-  const theme = useTheme();
+const classes = {
+  root: {
+    flexGrow: 1,
+  },
+  codeIcon: {
+    color: "blue",
+    fontSize: "40px",
+  },
+  h1: {
+    color: "blue",
+    fontSize: "20px",
+  },
+  nav: {
+    marginRight: 2,
+    display: "flex",
+    spaceBetween: 2,
+    color: "white",
+    fontSize: "",
+  },
+};
 
-  // const useStyles = makeStyles((theme) => ({
-  //   background: theme.palette.primary.main,
-  // }));
-  // const classes = useStyles();
+function Navbar() {
+  const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    // <ThemeProvider>
-    <AppBar
-      // className={classes.root}
-      // enableColorOnDark
-      sx={{
-        bgcolor: "transparent",
-      }}
-      position="static"
-    >
-      <CssBaseline />
-      <Toolbar>
-        <Typography
-          sx={{
-            flexGrow: "1",
-            fontSize: "20px",
-            display: "flex",
-            fontStyle: "oblique",
-            ml: 2,
-            color: "text.secondary",
-          }}
-          variant="h4"
-        >
-          <CodeIcon></CodeIcon>
-          Chris Pesar
-        </Typography>
+    <div style={classes.root}>
+      <AppBar
+        sx={{
+          bgcolor: "green",
+        }}
+        position="static"
+      >
+        {/* <CssBaseline /> */}
+        <Toolbar>
+          <Typography
+            sx={{
+              flexGrow: "1",
+              display: "flex",
+            }}
+            variant="h4"
+          >
+            <CodeIcon style={classes.codeIcon}> </CodeIcon>
+            <h1 style={classes.h1}>Chris Pesar</h1>
+          </Typography>
 
-        {isMobile ? (
-          <DrawerComponent />
-        ) : (
-          <div>
-            <Typography
-              sx={{
-                fontSize: "50px",
-                color: "text.secondary",
-                display: "flex",
-                cursor: "pointer",
-                mr: 2,
-              }}
-            >
+          {isMobile ? (
+            <DrawerComponent />
+          ) : (
+            <nav style={classes.nav}>
               <Typography
                 sx={{
-                  mr: 2,
-                  fontWeight: "bold",
-                  fontFamily: "Monospace",
+                  fontSize: "40px",
+                  color: "white",
                 }}
               >
                 <Link to="/">Home</Link>
-              </Typography>
-
-              <Typography
-                sx={{
-                  mr: 2,
-                  fontWeight: "bold",
-                  fontFamily: "Monospace",
-                }}
-              >
                 <Link to="/about">About</Link>
-              </Typography>
-
-              <Typography
-                sx={{
-                  mr: 2,
-                  fontWeight: "bold",
-                  fontFamily: "Monospace",
-                }}
-              >
                 <Link to="/projects">Projects</Link>
-              </Typography>
-
-              <Typography
-                sx={{
-                  mr: 2,
-                  fontWeight: "bold",
-                  fontFamily: "Monospace",
-                }}
-              >
                 <Link to="/contact">Contact</Link>
-              </Typography>
-
-              <Typography
-                sx={{
-                  mr: 2,
-                  fontWeight: "bold",
-                  fontFamily: "Monospace",
-                }}
-              >
                 <Link to="/resume">Resume</Link>
               </Typography>
-            </Typography>
-          </div>
-        )}
-      </Toolbar>
-    </AppBar>
-    // </ThemeProvider>
+            </nav>
+          )}
+        </Toolbar>
+      </AppBar>
+    </div>
   );
 }
 
