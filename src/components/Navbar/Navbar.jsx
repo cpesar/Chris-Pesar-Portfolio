@@ -1,18 +1,15 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 import {
   AppBar,
   Toolbar,
-  // CssBaseline,
   Typography,
   useTheme,
   useMediaQuery,
 } from "@mui/material";
-
-// import { makeStyles } from "@mui/styles";
-// import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import CodeIcon from "@mui/icons-material/Code";
 import DrawerComponent from "./Drawer";
@@ -22,13 +19,10 @@ const classes = {
     flexGrow: 1,
   },
   codeIcon: {
-    color: "blue",
+    color: "white",
     fontSize: "40px",
   },
-  h1: {
-    color: "blue",
-    fontSize: "20px",
-  },
+
   nav: {
     marginRight: 2,
     display: "flex",
@@ -37,6 +31,15 @@ const classes = {
     fontSize: "",
   },
 };
+const linkStyle = {
+  margin: "1rem",
+  textDecoration: "none",
+  color: "white",
+};
+
+const NavUnlisted = styled.ul`
+  text-decoration: none;
+`;
 
 function Navbar() {
   const theme = useTheme();
@@ -46,11 +49,10 @@ function Navbar() {
     <div style={classes.root}>
       <AppBar
         sx={{
-          bgcolor: "green",
+          bgcolor: "transparent",
         }}
         position="static"
       >
-        {/* <CssBaseline /> */}
         <Toolbar>
           <Typography
             sx={{
@@ -59,27 +61,31 @@ function Navbar() {
             }}
             variant="h4"
           >
-            <CodeIcon style={classes.codeIcon}> </CodeIcon>
-            <h1 style={classes.h1}>Chris Pesar</h1>
+            <Link to="/">
+              <CodeIcon style={classes.codeIcon}></CodeIcon>
+            </Link>
           </Typography>
 
           {isMobile ? (
             <DrawerComponent />
           ) : (
-            <nav style={classes.nav}>
-              <Typography
-                sx={{
-                  fontSize: "40px",
-                  color: "white",
-                }}
-              >
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/resume">Resume</Link>
-              </Typography>
-            </nav>
+            <NavUnlisted>
+              <Link to="/" style={linkStyle}>
+                Home
+              </Link>
+              <Link to="/about" style={linkStyle}>
+                About
+              </Link>
+              <Link to="/projects" style={linkStyle}>
+                Projects
+              </Link>
+              <Link to="/contact" style={linkStyle}>
+                Contact
+              </Link>
+              <Link to="/resume" style={linkStyle}>
+                Resume
+              </Link>
+            </NavUnlisted>
           )}
         </Toolbar>
       </AppBar>

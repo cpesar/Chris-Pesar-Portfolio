@@ -9,9 +9,26 @@ import {
   IconButton,
 } from "@mui/material";
 
-// import { makeStyles } from "@mui/styles";
-// import { createTheme, ThemeProvider } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
+
+// import styled from "styled-components";
+
+const classes = {
+  MenuIcon: {
+    color: "white",
+  },
+};
+
+const linkStyle = {
+  margin: "1rem",
+  // textDecoration: "none",
+  color: "blue",
+  // hover: "green",
+};
+
+// const NavUnlisted = styled.ul`
+//   text-decoration: none;
+// `;
 
 function DrawerComponent() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -19,17 +36,11 @@ function DrawerComponent() {
   return (
     <>
       <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+        {/* <NavUnlisted> */}
         <List>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link
-                sx={{
-                  textDecoration: "none",
-                  color: "blue",
-                  fontSize: "20px",
-                }}
-                to="/"
-              >
+              <Link to="/" style={linkStyle}>
                 Home
               </Link>
             </ListItemText>
@@ -37,14 +48,7 @@ function DrawerComponent() {
 
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link
-                sx={{
-                  textDecoration: "none",
-                  color: "blue",
-                  fontSize: "20px",
-                }}
-                to="/about"
-              >
+              <Link to="/about" style={linkStyle}>
                 About
               </Link>
             </ListItemText>
@@ -52,14 +56,7 @@ function DrawerComponent() {
 
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link
-                sx={{
-                  textDecoration: "none",
-                  color: "blue",
-                  fontSize: "20px",
-                }}
-                to="/contact"
-              >
+              <Link to="/contact" style={linkStyle}>
                 Contact
               </Link>
             </ListItemText>
@@ -67,14 +64,7 @@ function DrawerComponent() {
 
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link
-                sx={{
-                  textDecoration: "none",
-                  color: "blue",
-                  fontSize: "20px",
-                }}
-                to="/projects"
-              >
+              <Link to="/projects" style={linkStyle}>
                 Projects
               </Link>
             </ListItemText>
@@ -82,23 +72,17 @@ function DrawerComponent() {
 
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link
-                sx={{
-                  textDecoration: "none",
-                  color: "blue",
-                  fontSize: "20px",
-                }}
-                to="/resume"
-              >
+              <Link to="/resume" style={linkStyle}>
                 Resume
               </Link>
             </ListItemText>
           </ListItem>
         </List>
+        {/* </NavUnlisted> */}
       </Drawer>
 
       <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon />
+        <MenuIcon style={classes.MenuIcon} />
       </IconButton>
     </>
   );
