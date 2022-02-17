@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-// import Email from "./Email";
-// import { validateEmail } from "../../../utils/helpers.js";
-// import { db } from "../../../firebase";
-// import { collection, addDoc } from "@firebase/firestore";
+import Email from "./Email";
+import { validateEmail } from "../../../utils/helpers.js";
+import { db } from "../../../firebase";
+import { collection, addDoc } from "@firebase/firestore";
 
 // import Paper from "@mui/material/Paper";
 import {
