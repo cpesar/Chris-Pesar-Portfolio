@@ -25,7 +25,7 @@ const classes = {
     marginTop: 20,
     textAlign: "center",
     color: "blue",
-    fontSize: "100px",
+    fontSize: "50px",
     fontFamily: "Roboto",
     height: 800,
     width: "96vw",

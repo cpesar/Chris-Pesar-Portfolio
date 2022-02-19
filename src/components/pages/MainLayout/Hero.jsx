@@ -23,7 +23,7 @@ const classes = {
     marginTop: 20,
     textAlign: "center",
     color: "pink",
-    fontSize: "80px",
+    fontSize: "50px",
     // fontFamily: "Roboto",
     height: 800,
     width: "96vw",
@@ -46,7 +46,7 @@ const twitterStyle = {
   textDecoration: "none",
   color: "#1DA1F2",
   fontSize: "50px",
-  border: "1px solid black",
+  // border: "1px solid black",
 };
 
 const linkedInStyle = {
@@ -54,7 +54,7 @@ const linkedInStyle = {
   fontSize: "50px",
   margin: "2rem",
   textDecoration: "none",
-  border: "1px solid black",
+  // border: "1px solid black",
   // fontWeight: "bold",
 };
 
@@ -63,7 +63,7 @@ const gitHubStyle = {
   fontSize: "50px",
   margin: "2rem",
   textDecoration: "none",
-  border: "1px solid black",
+  // border: "1px solid black",
   // fontWeight: "bold",
   // url='https://github.com/cpesar'
 };

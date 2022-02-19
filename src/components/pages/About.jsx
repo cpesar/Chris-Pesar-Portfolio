@@ -16,13 +16,13 @@ const classes = {
     marginTop: 100,
     textAlign: "center",
     color: "pink",
-    fontSize: "50px",
+    fontSize: "30px",
     fontFamily: "Roboto",
     fontWeight: "bold",
     height: 800,
     width: "96vw",
     backgroundColor: "transparent",
-    border: "1px solid white",
+    // border: "1px solid white",
   },
 };
 
