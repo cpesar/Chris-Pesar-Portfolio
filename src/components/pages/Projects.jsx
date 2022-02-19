@@ -10,13 +10,13 @@ const classes = {
     padding: 20,
     marginTop: 20,
     textAlign: "center",
-    color: "blue",
+    color: "white",
     fontSize: "50px",
     fontFamily: "Roboto",
     height: 800,
     width: "96vw",
     backgroundColor: "transparent",
-    border: "10px solid blue",
+    border: "1px solid white",
   },
 };
 
