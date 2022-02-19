@@ -7,6 +7,10 @@
 
 A portfolio showcasing my work built using the following, Front-end UI: Reactjs, CSS Frameworks: materialUI & Styled-components, Back-end: Google firebase.
 <br />
+<br />
+<br />
+<br />
+<a name = "View my portfolio">[View my portfolio](https://chrispesarportfolio.netlify.app/)</a>
 
 ## :open_book: Table of Contents
 
