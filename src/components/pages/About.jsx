@@ -17,7 +17,7 @@ const classes = {
     textAlign: "center",
     color: "pink",
     fontSize: "30px",
-    fontFamily: "Roboto",
+    // fontFamily: "Roboto",
     fontWeight: "bold",
     height: 800,
     width: "96vw",
