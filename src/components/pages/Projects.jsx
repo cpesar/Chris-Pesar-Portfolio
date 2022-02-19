@@ -1,45 +1,102 @@
-// import * as React from "react";
-// import Paper from "@mui/material/Paper";
-// import Grid from "@mui/material/Grid";
+import * as React from "react";
 
-// const classes = {
-//   root: {
-//     flexGrow: 1,
-//   },
-//   paper: {
-//     padding: 20,
-//     marginTop: 20,
-//     textAlign: "center",
-//     color: "white",
-//     fontSize: "50px",
-//     // fontFamily: "Roboto",
-//     height: 800,
-//     width: "96vw",
-//     backgroundColor: "transparent",
-//     border: "1px solid white",
-//   },
-// };
+import {
+  Button,
+  CardActionArea,
+  CardActions,
+  Card,
+  Grid,
+  CardContent,
+  CardMedia,
+  Typography,
+  // Divider,
+} from "@mui/material";
 
-// function Projects() {
-//   return (
-//     <div style={classes.root}>
-//       <Grid container spacing={3}>
-//         <Grid item xs={12}>
-//           <Paper elevation={3} style={classes.paper}>
-//             Projects Page
-//           </Paper>
-//         </Grid>
-//       </Grid>
+function Projects() {
+  return (
+    <Grid container direction="row" justifyContent="center" alignItems="center">
+      <Grid>
+        <Card sx={{ maxWidth: 500, marginTop: 15, marginRight: 2 }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="140"
+              image="/static/images/cards/contemplative-reptile.jpg"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Lizard
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              View the site!
+            </Button>
+          </CardActions>
+        </Card>
+      </Grid>
 
-//       <Grid container spacing={3}>
-//         <Grid item xs={12}>
-//           <Paper elevation={10} style={classes.paper}>
-//             Grid 2
-//           </Paper>
-//         </Grid>
-//       </Grid>
-//     </div>
-//   );
-// }
+      <Grid>
+        <Card sx={{ maxWidth: 500, marginTop: 15, marginRight: 2 }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="140"
+              image="/static/images/cards/contemplative-reptile.jpg"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Lizard
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              View the site!
+            </Button>
+          </CardActions>
+        </Card>
+      </Grid>
 
-// export default Projects;
+      <Grid>
+        <Card sx={{ maxWidth: 500, marginTop: 15, marginRight: 2 }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="140"
+              image="/static/images/cards/contemplative-reptile.jpg"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Lizard
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              View the site!
+            </Button>
+          </CardActions>
+        </Card>
+      </Grid>
+    </Grid>
+  );
+}
+
+export default Projects;

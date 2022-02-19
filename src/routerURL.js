@@ -4,8 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Contact from "./components/pages/Contact/Contact.jsx";
 import About from "./components/pages/About.jsx";
 import Home from "./components/pages/Home.jsx";
-// import Projects from "./components/pages/Projects.jsx";
-import Projects from "./components/pages/ProjectTrial";
+import Projects from "./components/pages/Projects.jsx";
+// import Projects from "./components/pages/ProjectTrial";
 import Resume from "./components/pages/Resume.jsx";
 
 export default class routerURL extends Component {
