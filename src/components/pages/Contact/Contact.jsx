@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-import Email from "./Email";
+// import Email from "./Email";
 // import { validateEmail } from "../../../utils/helpers.js";
 // import { db } from "../../../firebase";
 // import { collection, addDoc } from "@firebase/firestore";
