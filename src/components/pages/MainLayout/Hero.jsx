@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import { Typography } from "@mui/material";
 // import Stack from "@mui/material/Stack";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -24,10 +25,13 @@ const classes = {
     color: "pink",
     fontSize: "80px",
     // fontFamily: "Roboto",
-    height: 700,
+    height: 800,
     width: "96vw",
     backgroundColor: "transparent",
     // border: "1px solid white",
+    // "&:before": {
+    //   display: "none",
+    // },
   },
   // paper: {
   //   paddingBottom: 10,
@@ -64,14 +68,19 @@ const gitHubStyle = {
   // url='https://github.com/cpesar'
 };
 
-const Title = styled.h1`
-  font-size: 5em;
-  text-align: center;
-  color: #ffffff;
-`;
+// const MainHeading = styled.h1`
+//   font-size: 5em;
+//   text-align: center;
+//   color: #ffffff;
+// `;
+
+// const SubHeading = styled.h3`
+//   text-align: center;
+// `;
 
 const WordList = styled.span`
   color: #ffff00;
+  fontsize: "10px";
 `;
 
 const Hero = () => {
@@ -88,28 +97,19 @@ const Hero = () => {
   return (
     <>
       <Grid container>
-        <Grid item xs={12}>
-          <Title>
+        <Grid item xs={12} sx={{ paddingTop: "200px", paddingBottom: "-10px" }}>
+          <Typography variant="h1 align center">
             <Paper style={classes.paper}>
               Hi. I'm Chris <br />{" "}
               <WordList ref={textRef}>
                 <br />
               </WordList>
             </Paper>
-          </Title>
-          {/* </Grid> */}
-          {/* <Grid item xs={12}> */}
-          <Title>
-            <Paper
-              style={classes.paper}
-              // component={Stack}
-              // direction="column"
-              // justifyContent="center"
-            >
+          </Typography>
+
+          <Typography variant="h5 align center">
+            <Paper style={classes.paper}>
               I like to build things on the internet <br />
-              {/* </Paper>
-            <Paper style={classes.paper}> */}
-              {/* <Paper component={Stack} direction="column" justifyContent="center"> */}
               <LinkedInIcon
                 style={linkedInStyle}
                 url="https://www.linkedin.com/in/chris-pesar/"
@@ -119,9 +119,8 @@ const Hero = () => {
                 style={twitterStyle}
                 url="https://twitter.com/_pesar_"
               />
-              {/* </Paper> */}
             </Paper>
-          </Title>
+          </Typography>
         </Grid>
       </Grid>
     </>
