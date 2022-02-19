@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 // import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
-import Footer from "./components/pages/MainLayout/Footer.jsx";
+// import Footer from "./components/pages/MainLayout/Footer.jsx";
 
 import RouterURL from "../src/routerURL";
 
@@ -17,7 +17,7 @@ function App(props) {
         <div>
           <Navbar />
           <RouterURL />
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
     </>
