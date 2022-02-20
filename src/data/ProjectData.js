@@ -1,4 +1,6 @@
 import mugshot from "../assets/Headshots/uk_dl.png";
+import mountains from "../assets/Background/mtns.jpeg";
+import snow from "../assets/Background/mtns-at-night.jpeg";
 
 const ProjectData = [
   {
@@ -16,7 +18,7 @@ const ProjectData = [
   {
     id: 2,
     title: "ShopShop",
-    img: mugshot,
+    img: mountains,
     // category: "Ecommerce",
     description:
       "A simple e commerce app where users can add items to their cart and checkout using Stripe",
@@ -27,7 +29,7 @@ const ProjectData = [
   {
     id: 3,
     title: "DockNFlock",
-    img: mugshot,
+    img: mountains,
     // category: "Ecommerce",
     description:
       "An app that allows users to search for parking and tickets in one conveienent place",
@@ -38,7 +40,7 @@ const ProjectData = [
   {
     id: 4,
     title: "BestSellers",
-    img: mugshot,
+    img: snow,
     // category: "API",
     description:
       "A simple app that allows a user to search for a book within a selected category. The user can then checkout their item which will link them to Amazon",
@@ -49,7 +51,7 @@ const ProjectData = [
   {
     id: 5,
     title: "GoogleBooks",
-    img: mugshot,
+    img: snow,
     // category: "API",
     description: "Simple book search app",
     site: "https://the-book-store-2.herokuapp.com/",

@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 
-import Carousel from "react-material-ui-Carousel";
+// import Carousel from "react-material-ui-Carousel";
 // import { AutoRotatingCarousel } from "material-auto-rotating-carousel";
 // import Carousel from "react-multi-carousel";
 
@@ -11,11 +11,11 @@ function ProjectList({ project }) {
   }
   return (
     <div className="feedback-list">
-      <Carousel>
-        {project.map((item) => (
-          <ProjectItem key={item.id} item={item} />
-        ))}
-      </Carousel>
+      {/* <Carousel> */}
+      {project.map((item) => (
+        <ProjectItem key={item.id} item={item} />
+      ))}
+      {/* </Carousel> */}
     </div>
   );
 }
