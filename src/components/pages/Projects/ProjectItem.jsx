@@ -1,20 +1,59 @@
-import Card from "../../shared/Card";
+// import Card from "../../shared/Card";
 
-// import styled from "styled-components";
+// // import styled from "styled-components";
 
-// const ProjectTitle = styled.h1`
-//   text-align: center,
-//   textDecoration: "none",
+// // const ProjectTitle = styled.h1`
+// //   text-align: center,
+// //   textDecoration: "none",
 
-// `;
+// // `;
+
+// function ProjectItem({ item }) {
+//   return (
+//     <Card>
+//       <div className="num-display">
+//         <h1>{item.title} </h1>
+//       </div>
+//       <div className="text-display">{item.description}</div>
+//     </Card>
+//   );
+// }
+
+// export default ProjectItem;
+
+import React from "react";
+
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+} from "@mui/material";
 
 function ProjectItem({ item }) {
   return (
-    <Card>
-      <div className="num-display">
-        <h1>{item.title} </h1>
-      </div>
-      <div className="text-display">{item.description}</div>
+    <Card sx={{ maxWidth: 800, marginBottom: 2 }}>
+      <CardMedia
+        component="img"
+        height="400"
+        // image="https://curated-uploads.imgix.net/AgAAAB0Auodf8ALzM9my5Bww1FPu2g.png?auto=compress%2Cformat&ch=Width%2CDPR%2CSave-Data&ar=16%3A11&fit=crop&ixlib=react-9.3.0"
+        image={item.img}
+        alt="weather"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {item.title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {item.description}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Website</Button>
+        <Button size="small">Github</Button>
+      </CardActions>
     </Card>
   );
 }

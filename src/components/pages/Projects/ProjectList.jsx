@@ -6,7 +6,7 @@ function ProjectList({ project }) {
     return <p>No Project Yet</p>;
   }
   return (
-    <div classname="feedback-list">
+    <div className="feedback-list">
       {project.map((item) => (
         <ProjectItem key={item.id} item={item} />
       ))}
