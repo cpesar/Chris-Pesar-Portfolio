@@ -1,12 +1,14 @@
-import React from "react";
-
+// import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
-
 import RouterURL from "../src/routerURL";
 
-function App(props) {
+// import ProjectData from "./data/ProjectData";
+// import ProjectList from "./components/pages/Projects/ProjectList.jsx";
+
+function App() {
+  // const [project, setProject] = useState(ProjectData);
   return (
     <>
       <Router>
@@ -16,6 +18,12 @@ function App(props) {
         </div>
       </Router>
     </>
+
+    // <>
+    //   <div className="container">
+    //     <ProjectList project={project} />
+    //   </div>
+    // </>
   );
 }
 

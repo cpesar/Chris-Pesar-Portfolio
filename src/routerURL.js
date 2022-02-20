@@ -8,8 +8,12 @@ import Projects from "./components/pages/Projects.jsx";
 // import Projects from "./components/pages/ProjectTrial";
 import Resume from "./components/pages/Resume.jsx";
 
+// import ProjectData from "./data/ProjectData";
+// import ProjectList from "./components/pages/Projects/ProjectList.jsx";
+
 export default class routerURL extends Component {
   render() {
+    // const [project, setProject] = useState(ProjectData);
     return (
       <Routes>
         <Route path="/" element={<Home />} />

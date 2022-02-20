@@ -1,6 +1,4 @@
-// import React from "react";
-
-const projects = [
+const ProjectData = [
   {
     id: 1,
     title: "PizzaHunt",
@@ -79,10 +77,4 @@ const projects = [
   },
 ];
 
-// function data() {
-//   return <div>data</div>;
-// }
-
-// export default data;
-
-export default projects;
+export default ProjectData;
