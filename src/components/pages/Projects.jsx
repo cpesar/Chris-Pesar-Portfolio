@@ -5,19 +5,6 @@ import ProjectList from "./Projects/ProjectList";
 
 import styled from "styled-components";
 
-// import {
-//   // Button,
-//   // CardActionArea,
-//   // CardActions,
-//   Card,
-//   Grid,
-//   // CardContent,
-//   // CardMedia,
-//   // // CardHeader,
-//   // Typography,
-//   // Divider,
-// } from "@mui/material";
-
 const ProjectContainer = styled.div`
   max-width: 768px;
   margin: auto;
