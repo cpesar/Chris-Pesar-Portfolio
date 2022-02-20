@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "react-material-ui-Carousel";
+// import Carousel from "react-material-ui-Carousel";
 
 import styled from "styled-components";
 
@@ -15,9 +15,9 @@ const CardStyle = styled.div`
 
 function Card({ children }) {
   return (
-    <Carousel>
-      <CardStyle>{children}</CardStyle>
-    </Carousel>
+    // <Carousel>
+    <CardStyle>{children}</CardStyle>
+    // </Carousel>
   );
 }
 

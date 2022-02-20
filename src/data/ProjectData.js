@@ -1,6 +1,9 @@
 import mugshot from "../assets/Headshots/uk_dl.png";
 import mountains from "../assets/Background/mtns.jpeg";
 import snow from "../assets/Background/mtns-at-night.jpeg";
+import yung from "../assets/Images/yung.png";
+import pizza from "../assets/Images/pizza.svg.png";
+import weather from "../assets/Images/weather.svg.png";
 
 const ProjectData = [
   {
@@ -18,7 +21,7 @@ const ProjectData = [
   {
     id: 2,
     title: "ShopShop",
-    img: mountains,
+    img: yung,
     // category: "Ecommerce",
     description:
       "A simple e commerce app where users can add items to their cart and checkout using Stripe",
@@ -51,7 +54,7 @@ const ProjectData = [
   {
     id: 5,
     title: "GoogleBooks",
-    img: snow,
+    img: weather,
     // category: "API",
     description: "Simple book search app",
     site: "https://the-book-store-2.herokuapp.com/",
@@ -61,7 +64,7 @@ const ProjectData = [
   {
     id: 6,
     title: "mugshotApp",
-    img: mugshot,
+    img: yung,
     // category: "API",
     description:
       "A user can search for weather by city state or zipcode. Uses the openweather api",
@@ -72,7 +75,7 @@ const ProjectData = [
   {
     id: 7,
     title: "DeepThoughts",
-    img: mugshot,
+    img: pizza,
     // category: "Blogs",
     description: "A thought blog",
     site: "https://deep-thinker.herokuapp.com/",

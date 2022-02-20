@@ -11,7 +11,7 @@ function ProjectList({ project }) {
   }
   return (
     <div className="feedback-list">
-      {/* <Carousel> */}
+      {/* <Carousel className="carousel" autoplay={true} animation="slide"> */}
       {project.map((item) => (
         <ProjectItem key={item.id} item={item} />
       ))}

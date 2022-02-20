@@ -9,6 +9,8 @@ body {
   /* font-family: "Alfa Slab One", cursive; */
   /* font-family: "Rock Salt", cursive; */
   font-family: "Short Stack", cursive;
+  margin: 0;
+  padding: 0;
 }
 
 /* .card {
