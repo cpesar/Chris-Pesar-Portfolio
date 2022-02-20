@@ -3,29 +3,34 @@ import React, { useState } from "react";
 import ProjectData from "../../data/ProjectData.js";
 import ProjectList from "./Projects/ProjectList";
 
-import {
-  // Button,
-  // CardActionArea,
-  // CardActions,
-  Card,
-  Grid,
-  // CardContent,
-  // CardMedia,
-  // // CardHeader,
-  // Typography,
-  // Divider,
-} from "@mui/material";
+import styled from "styled-components";
+
+// import {
+//   // Button,
+//   // CardActionArea,
+//   // CardActions,
+//   Card,
+//   Grid,
+//   // CardContent,
+//   // CardMedia,
+//   // // CardHeader,
+//   // Typography,
+//   // Divider,
+// } from "@mui/material";
+
+const ProjectContainer = styled.div`
+  max-width: 768px;
+  margin: auto;
+  padding: 0 20px;
+}
+`;
 
 function Projects() {
   const [project, setProject] = useState(ProjectData);
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center">
-      <Grid>
-        <Card sx={{ maxWidth: 500, marginTop: 15, marginRight: 2 }}>
-          <ProjectList project={project} />
-        </Card>
-      </Grid>
-    </Grid>
+    <ProjectContainer>
+      <ProjectList project={project} />
+    </ProjectContainer>
   );
 }
 
