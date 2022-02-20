@@ -22,13 +22,14 @@ const classes = {
     padding: 20,
     marginTop: 20,
     textAlign: "center",
-    color: "pink",
-    fontSize: "50px",
+    // color: "#FFFFCC",
+    color: "#EEEEEE",
+    fontSize: "100px",
     // fontFamily: "Roboto",
     height: 800,
     width: "96vw",
     backgroundColor: "transparent",
-    // border: "1px solid white",
+    border: "1px solid white",
     // "&:before": {
     //   display: "none",
     // },
@@ -46,7 +47,9 @@ const twitterStyle = {
   textDecoration: "none",
   color: "#1DA1F2",
   fontSize: "50px",
-  // border: "1px solid black",
+  // backgroundColor: "rgba(0, 0, 0, 0.2)",
+  // border: "1px solid white",
+  opacity: "0.8",
 };
 
 const linkedInStyle = {
@@ -54,29 +57,21 @@ const linkedInStyle = {
   fontSize: "50px",
   margin: "2rem",
   textDecoration: "none",
-  // border: "1px solid black",
+  // border: "1px solid white",
+  opacity: "0.8",
   // fontWeight: "bold",
 };
 
 const gitHubStyle = {
-  color: "#6e5494",
+  color: "white",
   fontSize: "50px",
   margin: "2rem",
   textDecoration: "none",
-  // border: "1px solid black",
+  // border: "1px solid white",
+  opacity: "0.8",
   // fontWeight: "bold",
   // url='https://github.com/cpesar'
 };
-
-// const MainHeading = styled.h1`
-//   font-size: 5em;
-//   text-align: center;
-//   color: #ffffff;
-// `;
-
-// const SubHeading = styled.h3`
-//   text-align: center;
-// `;
 
 const WordList = styled.span`
   color: #ffff00;
@@ -100,16 +95,20 @@ const Hero = () => {
         <Grid item xs={12} sx={{ paddingTop: "200px", paddingBottom: "-10px" }}>
           <Typography variant="h1 align center">
             <Paper style={classes.paper}>
-              Hi. I'm Chris <br />{" "}
-              <WordList ref={textRef}>
+              <Typography variant="h2" fontSize="60px">
+                Hi. I'm Chris <br />{" "}
+                <span ref={textRef} style={{ color: "yellow" }}></span>
                 <br />
-              </WordList>
+              </Typography>
             </Paper>
           </Typography>
 
           <Typography variant="h5 align center">
             <Paper style={classes.paper}>
-              I like to build things on the internet <br />
+              <Typography variant="h2" fontSize="30px">
+                I like to build things on the internet. <br />
+              </Typography>
+
               <LinkedInIcon
                 style={linkedInStyle}
                 url="https://www.linkedin.com/in/chris-pesar/"
