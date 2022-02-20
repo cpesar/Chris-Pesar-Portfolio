@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import projects from "../../data.js";
+
 import {
   Button,
   CardActionArea,
@@ -8,15 +10,17 @@ import {
   Grid,
   CardContent,
   CardMedia,
+  CardHeader,
   Typography,
   // Divider,
 } from "@mui/material";
 
-function Projects() {
+function Projects({ id, title, description, site, repo }) {
   return (
     <Grid container direction="row" justifyContent="center" alignItems="center">
       <Grid>
         <Card sx={{ maxWidth: 500, marginTop: 15, marginRight: 2 }}>
+          <CardHeader>This is the card header</CardHeader>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -26,7 +30,7 @@ function Projects() {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Lizard
+                <Card.Title>{projects.title}</Card.Title>
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 Lizards are a widespread group of squamate reptiles, with over
