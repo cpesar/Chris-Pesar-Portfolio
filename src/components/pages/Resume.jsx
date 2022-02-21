@@ -2,6 +2,8 @@ import * as React from "react";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
+import ConstructionIcon from "@mui/icons-material/Construction";
+
 const classes = {
   root: {
     flexGrow: 1,
@@ -26,7 +28,10 @@ function Resume() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={3} style={classes.paper}>
-            Resume Page
+            Page under construction
+            <div>
+              <ConstructionIcon style={{ fontSize: "60px" }} />
+            </div>
           </Paper>
         </Grid>
       </Grid>
@@ -34,7 +39,7 @@ function Resume() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={10} style={classes.paper}>
-            Grid 2
+            {/* Grid 2 */}
           </Paper>
         </Grid>
       </Grid>

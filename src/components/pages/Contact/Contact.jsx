@@ -5,6 +5,8 @@
 // import { db } from "../../../firebase";
 // import { collection, addDoc } from "@firebase/firestore";
 
+import ConstructionIcon from "@mui/icons-material/Construction";
+
 // import Paper from "@mui/material/Paper";
 import {
   Grid,
@@ -63,7 +65,10 @@ function ContactForm() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={3} style={classes.paper}>
-            Contact Page
+            Page under construction
+            <div>
+              <ConstructionIcon style={{ fontSize: "60px" }} />
+            </div>
           </Paper>
         </Grid>
       </Grid>
@@ -71,7 +76,7 @@ function ContactForm() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper elevation={10} style={classes.paper}>
-            Grid 2
+            {/* Grid 2 */}
           </Paper>
         </Grid>
       </Grid>
