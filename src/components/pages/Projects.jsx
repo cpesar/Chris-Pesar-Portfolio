@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-import ProjectData from "../../data/ProjectData.js";
-import ProjectList from "./Projects/ProjectList";
+// import ProjectData from "../../data/ProjectData.js";
+// import ProjectList from "./Projects/ProjectList";
 
 // import styled from "styled-components";
 
@@ -37,7 +37,7 @@ const classes = {
 };
 
 function Projects() {
-  const [project, setProject] = useState(ProjectData);
+  // const [project, setProject] = useState(ProjectData);
   return (
     // <ProjectContainer>
     //   <ProjectList project={project} />
