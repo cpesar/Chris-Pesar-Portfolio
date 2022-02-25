@@ -1,9 +1,9 @@
-import mugshot from "../assets/Headshots/uk_dl.png";
-import mountains from "../assets/Background/mtns.jpeg";
-import snow from "../assets/Background/mtns-at-night.jpeg";
-import yung from "../assets/Images/yung.png";
-import pizza from "../assets/Images/pizza.svg.png";
-import weather from "../assets/Images/weather.svg.png";
+import mugshot from "../../assets/Headshots/uk_dl.png";
+import mountains from "../../assets/Background/mtns.jpeg";
+import snow from "../../assets/Background/mtns-at-night.jpeg";
+import yung from "../../assets/Images/yung.png";
+import pizza from "../../assets/Images/pizza.svg.png";
+import weather from "../../assets/Images/weather.svg.png";
 
 const ProjectData = [
   {

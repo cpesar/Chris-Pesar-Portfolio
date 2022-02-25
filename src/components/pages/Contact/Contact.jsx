@@ -37,28 +37,28 @@ const classes = {
 };
 
 function ContactForm() {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   addDoc(collection(db, "contacts"), {
-  //     name: name,
-  //     email: email,
-  //     message: message,
-  //   })
-  //     .then(() => {
-  //       alert("Message submitted 👍");
-  //     })
-  //     .catch((error) => {
-  //       alert(error.message);
-  //     });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addDoc(collection(db, "contacts"), {
+      name: name,
+      email: email,
+      message: message,
+    })
+      .then(() => {
+        alert("Message submitted 👍");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
 
-  //   setName("");
-  //   setEmail("");
-  //   setMessage("");
-  // };
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
   return (
     <div style={classes.root}>

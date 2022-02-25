@@ -1,7 +1,5 @@
 import React from "react";
 
-// import Carousel from "react-material-ui-carousel";
-
 import {
   Card,
   CardActions,
@@ -13,7 +11,6 @@ import {
 
 function ProjectItem({ item }) {
   return (
-    // <Carousel>
     <Card sx={{ maxWidth: 800, marginBottom: 2 }}>
       <CardMedia
         component="img"
@@ -35,7 +32,6 @@ function ProjectItem({ item }) {
         <Button size="small">Github</Button>
       </CardActions>
     </Card>
-    // {/* </Carousel> */}
   );
 }
 
