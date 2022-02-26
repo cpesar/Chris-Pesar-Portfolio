@@ -2,7 +2,7 @@ import React from "react";
 
 import {
   Typography,
-  Box,
+  Paper,
   CardContent,
   Grid,
   TextField,
@@ -12,15 +12,15 @@ import {
 const ContactForm = () => {
   return (
     <>
-      <Box
-        border="6px solid blue"
-        maxWidth={800}
-        marginRight="auto"
-        marginLeft="auto"
-        paddingTop={20}
-        paddingBottom={20}
-        paddingLeft={10}
-        paddingRight={10}
+      <Paper
+        sx={{
+          maxWidth: 800,
+          marginTop: 15,
+          marginRight: "auto",
+          marginLeft: "auto",
+          paddingBottom: "auto",
+          borderRadius: "10px",
+        }}
       >
         <CardContent>
           <Typography gutterBottom variant="h4" align="center">
@@ -36,6 +36,7 @@ const ContactForm = () => {
           >
             Please fill out the form below
           </Typography>
+
           <form>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
@@ -86,7 +87,7 @@ const ContactForm = () => {
             </Grid>
           </form>
         </CardContent>
-      </Box>
+      </Paper>
     </>
   );
 };
