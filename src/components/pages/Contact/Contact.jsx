@@ -1,117 +1,94 @@
-// import React, { useState } from "react";
+import React from "react";
 
-// import Email from "./Email";
-// import { validateEmail } from "../../../utils/helpers.js";
-// import { db } from "../../../firebase";
-// import { collection, addDoc } from "@firebase/firestore";
-
-import ConstructionIcon from "@mui/icons-material/Construction";
-
-// import Paper from "@mui/material/Paper";
 import {
+  Typography,
+  Box,
+  CardContent,
   Grid,
-  Paper,
-  // TextField,
-  // Button,
-  // Card,
-  // CardContent
-  // Typography
+  TextField,
+  Button,
 } from "@mui/material";
 
-const classes = {
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: 20,
-    marginTop: 20,
-    textAlign: "center",
-    color: "white",
-    fontSize: "50px",
-    // fontFamily: "Roboto",
-    height: 800,
-    width: "96vw",
-    backgroundColor: "transparent",
-    border: "1px solid white",
-  },
+const ContactForm = () => {
+  return (
+    <>
+      <Box
+        border="6px solid blue"
+        maxWidth={800}
+        marginRight="auto"
+        marginLeft="auto"
+        paddingTop={20}
+        paddingBottom={20}
+        paddingLeft={10}
+        paddingRight={10}
+      >
+        <CardContent>
+          <Typography gutterBottom variant="h4" align="center">
+            Drop me a line!
+          </Typography>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="p"
+            align="center"
+            paddingBottom={5}
+            color="textSecondary"
+          >
+            Please fill out the form below
+          </Typography>
+          <form>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  label="First Name"
+                  placeholder="Enter your first name"
+                  variant="outlined"
+                  fullWidth
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  label="Last Name"
+                  placeholder="Enter your last name"
+                  variant="outlined"
+                  fullWidth
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  label="Email"
+                  type="email"
+                  placeholder="Enter your email address"
+                  variant="outlined"
+                  fullWidth
+                />
+              </Grid>
+              <Grid item xs={12} paddingBottom={2}>
+                <TextField
+                  label="Message"
+                  placeholder="Your message goes here"
+                  variant="outlined"
+                  fullWidth
+                  multiline
+                  rows={4}
+                />
+              </Grid>
+              <Grid item xs={12} paddingBottom={2}>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                  fullWidth
+                >
+                  Submit
+                </Button>
+              </Grid>
+            </Grid>
+          </form>
+        </CardContent>
+      </Box>
+    </>
+  );
 };
 
-function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addDoc(collection(db, "contacts"), {
-      name: name,
-      email: email,
-      message: message,
-    })
-      .then(() => {
-        alert("Message submitted 👍");
-      })
-      .catch((error) => {
-        alert(error.message);
-      });
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
-  return (
-    <div style={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper elevation={3} style={classes.paper}>
-            Page under construction
-            <div>
-              <ConstructionIcon style={{ fontSize: "60px" }} />
-            </div>
-          </Paper>
-        </Grid>
-      </Grid>
-
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper elevation={10} style={classes.paper}>
-            {/* Grid 2 */}
-          </Paper>
-        </Grid>
-      </Grid>
-    </div>
-  );
-}
-
 export default ContactForm;
-
-// import React, { useState } from "react";
-// import Button from "@mui/material";
-
-// import ModalDialog from "../../modals/ModalDialog";
-
-// function ContactForm() {
-//   //declare a new state varibale for modal open
-//   const [open, setOpen] = useState(false);
-
-//   //function to handle modal open
-//   const handleOpen = () => {
-//     setOpen(true);
-//   };
-//   //function to handle modal close
-//   const handleClose = () => {
-//     setOpen(false);
-//   };
-//   return (
-//     <div>
-//       <Button variant="contained" color="primary" onClick={handleOpen}>
-//         SignUp
-//       </Button>
-
-//       <ModalDialog open={open} handleClose={handleClose} />
-//     </div>
-//   );
-// }
-
-// export default ContactForm;
