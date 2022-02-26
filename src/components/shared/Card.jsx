@@ -1,5 +1,4 @@
 import React from "react";
-// import Carousel from "react-material-ui-Carousel";
 
 import styled from "styled-components";
 
@@ -14,11 +13,7 @@ const CardStyle = styled.div`
 `;
 
 function Card({ children }) {
-  return (
-    // <Carousel>
-    <CardStyle>{children}</CardStyle>
-    // </Carousel>
-  );
+  return <CardStyle>{children}</CardStyle>;
 }
 
 export default Card;

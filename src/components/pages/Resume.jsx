@@ -1,24 +1,13 @@
 import * as React from "react";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
 
-import ConstructionIcon from "@mui/icons-material/Construction";
+import { Typography, Grid, Paper } from "@mui/material";
+
+import SchoolIcon from "@mui/icons-material/School";
+import ComputerIcon from "@mui/icons-material/Computer";
 
 const classes = {
   root: {
     flexGrow: 1,
-  },
-  paper: {
-    padding: 20,
-    marginTop: 20,
-    textAlign: "center",
-    color: "white",
-    fontSize: "50px",
-    // fontFamily: "Roboto",
-    height: 800,
-    width: "96vw",
-    backgroundColor: "transparent",
-    border: "1px solid white",
   },
 };
 
@@ -27,19 +16,48 @@ function Resume() {
     <div style={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper elevation={3} style={classes.paper}>
-            Page under construction
+          <Paper
+            sx={{
+              padding: 20,
+              marginTop: -5,
+              textAlign: "center",
+              color: "white",
+              height: 300,
+              backgroundColor: "transparent",
+            }}
+          >
+            <Typography variant="h2" color="primary">
+              Education
+            </Typography>
+            <SchoolIcon style={{ fontSize: "80px" }} />
+
             <div>
-              <ConstructionIcon style={{ fontSize: "60px" }} />
+              <Typography gutterBottom variant="h6">
+                Towson University
+              </Typography>
+              <span>Bachelors of Business Administration</span>
+              <Typography variant="h6">University of Utah</Typography>
+              <span>Full stack web development bootcamp</span>
             </div>
           </Paper>
-        </Grid>
-      </Grid>
+          <Paper
+            sx={{
+              padding: 20,
+              textAlign: "center",
+              color: "white",
+              backgroundColor: "transparent",
+            }}
+          >
+            <Typography variant="h2" color="primary">
+              Skills
+            </Typography>
+            <ComputerIcon style={{ fontSize: "80px" }} />
 
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper elevation={10} style={classes.paper}>
-            {/* Grid 2 */}
+            <div>
+              <br /> <br /> Towson University{" "}
+              <span>Bachelors of Business Administration</span>
+              <br /> <br /> University of Utah Coding Bootcamp
+            </div>
           </Paper>
         </Grid>
       </Grid>
