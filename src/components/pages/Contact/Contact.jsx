@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { db } from "../../../firebase.config";
+import { collection, addDoc } from "@firebase/firestore";
 
 import {
   Typography,
@@ -10,6 +13,28 @@ import {
 } from "@mui/material";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addDoc(collection(db, "contacts"), {
+      name: name,
+      email: email,
+      message: message,
+    })
+      .then(() => {
+        alert("Message submitted 👍");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
   return (
     <>
       <Paper
@@ -22,7 +47,7 @@ const ContactForm = () => {
           borderRadius: "10px",
         }}
       >
-        <CardContent>
+        <CardContent onSubmit={handleSubmit}>
           <Typography gutterBottom variant="h4" align="center">
             Drop me a line!
           </Typography>
@@ -39,26 +64,23 @@ const ContactForm = () => {
 
           <form>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField
-                  label="First Name"
-                  placeholder="Enter your first name"
+                  label="Name"
+                  placeholder="Please enter your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   variant="outlined"
                   fullWidth
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  label="Last Name"
-                  placeholder="Enter your last name"
-                  variant="outlined"
-                  fullWidth
-                />
-              </Grid>
+
               <Grid item xs={12}>
                 <TextField
                   label="Email"
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address"
                   variant="outlined"
                   fullWidth
@@ -68,6 +90,8 @@ const ContactForm = () => {
                 <TextField
                   label="Message"
                   placeholder="Your message goes here"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   variant="outlined"
                   fullWidth
                   multiline
