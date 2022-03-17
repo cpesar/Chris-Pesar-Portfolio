@@ -3,16 +3,12 @@ import React, { useRef, useEffect } from "react";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-// import Stack from "@mui/material/Stack";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-// import MailIcon from "@mui/icons-material/Mail";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 import { init } from "ityped";
-
-// import styled from "styled-components";
 
 const classes = {
   root: {
@@ -52,7 +48,6 @@ const gitHubStyle = {
   margin: "2rem",
   textDecoration: "none",
   opacity: "0.8",
-  // url='https://github.com/cpesar'
 };
 
 const Hero = () => {
@@ -107,12 +102,26 @@ const Hero = () => {
 
               <LinkedInIcon
                 style={linkedInStyle}
-                url="https://www.linkedin.com/in/chris-pesar/"
+                cursor="pointer"
+                onClick={(event) =>
+                  (window.location.href =
+                    "https://www.linkedin.com/in/chris-pesar/")
+                }
               />
-              <GitHubIcon style={gitHubStyle} url="https://github.com/cpesar" />
+
+              <GitHubIcon
+                style={gitHubStyle}
+                cursor="pointer"
+                onClick={(event) =>
+                  (window.location.href = "https://github.com/cpesar")
+                }
+              />
               <TwitterIcon
                 style={twitterStyle}
-                url="https://twitter.com/_pesar_"
+                cursor="pointer"
+                onClick={(event) =>
+                  (window.location.href = "https://twitter.com/_pesar_")
+                }
               />
             </Paper>
           </Typography>
