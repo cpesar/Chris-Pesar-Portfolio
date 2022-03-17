@@ -1,5 +1,5 @@
 import mugshot from "../../assets/Headshots/uk_dl.png";
-import mountains from "../../assets/Background/mtns.jpeg";
+// import mountains from "../../assets/Background/mtns.jpeg";
 import docker from "../../assets/Images/DockNFlock.png";
 import snow from "../../assets/Background/mtns-at-night.jpeg";
 import yung from "../../assets/Images/yung.png";
