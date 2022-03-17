@@ -1,5 +1,6 @@
 import mugshot from "../../assets/Headshots/uk_dl.png";
 import mountains from "../../assets/Background/mtns.jpeg";
+import docker from "../../assets/Images/DockNFlock.png";
 import snow from "../../assets/Background/mtns-at-night.jpeg";
 import yung from "../../assets/Images/yung.png";
 import pizza from "../../assets/Images/pizza.svg.png";
@@ -26,10 +27,10 @@ const ProjectData = [
 
   {
     title: "DockNFlock",
-    img: mountains,
+    img: docker,
     description:
-      "An app that allows users to search for parking and tickets in one conveienent place",
-    site: "https://dock-and-flock.herokuapp.com/",
+      "An app that allows users to search for parking and event tickets in one conveienent place",
+    site: "https://dock-n-flock.netlify.app/",
     repo: "https://github.com/cpesar/dock-n-flock",
   },
 
