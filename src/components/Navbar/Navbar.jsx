@@ -35,7 +35,24 @@ const linkStyle = {
   margin: "1rem",
   textDecoration: "none",
   color: "white",
+
+  // hover: "green",
+  // "&:hover": {
+  //   color: "pink",
+  //   transition: "all 0.3s ease",
+  // },
 };
+
+// const LinkStyle = styled.link`
+//   margin: 1rem;
+//   text-decoration: none;
+//   color: white;
+
+//   &:hover {
+//     color: #782605;
+//     transition: all 0.3s ease;
+//   }
+// `;
 
 const NavUnlisted = styled.ul`
   text-decoration: none;

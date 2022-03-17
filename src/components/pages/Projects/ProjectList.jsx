@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import ProjectItem from "./ProjectItem";
 
 function ProjectList({ project }) {
-  if (!project || project.length === 0) {
-    return <p>No Project Yet</p>;
-  }
+  // if (!project || project.length === 0) {
+  //   return <p>No Project Yet</p>;
+  // }
   return (
     <div className="feedback-list">
       {project.map((item) => (
