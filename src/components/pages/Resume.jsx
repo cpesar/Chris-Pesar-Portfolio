@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Typography, Grid, Box, Card } from "@mui/material";
+import { Typography, Grid, Box } from "@mui/material";
 
 import SchoolIcon from "@mui/icons-material/School";
 import ComputerIcon from "@mui/icons-material/Computer";

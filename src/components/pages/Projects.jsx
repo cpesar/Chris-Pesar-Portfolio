@@ -13,7 +13,7 @@ const ProjectContainer = styled.div`
 `;
 
 function Projects() {
-  const [project, setProject] = useState(ProjectData);
+  const [project] = useState(ProjectData);
   return (
     <ProjectContainer>
       <ProjectList project={project} />
