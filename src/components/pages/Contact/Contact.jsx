@@ -44,11 +44,23 @@ const ContactForm = () => {
           marginRight: "auto",
           marginLeft: "auto",
           paddingBottom: "auto",
-          borderRadius: "10px",
+          borderRadius: "5px",
+          backgroundColor: "#dcdcdc",
+
+          // backgroundColor: "#213c52",
+          // backgroundBlendMode: "screen",
+          // position: "relative",
+          // mixBlendMode: "hard-light",
         }}
       >
         <CardContent onSubmit={handleSubmit}>
-          <Typography gutterBottom variant="h4" align="center">
+          <Typography
+            gutterBottom
+            variant="h4"
+            align="center"
+            fontFamily="Roboto Mono, monospace;"
+            fontWeight="bold"
+          >
             Drop me a line!
           </Typography>
           <Typography
@@ -57,7 +69,10 @@ const ContactForm = () => {
             component="p"
             align="center"
             paddingBottom={5}
-            color="textSecondary"
+            color="primary"
+            // color="textSecondary"
+            fontFamily="Roboto Mono, monospace;"
+            // fontWeight="bold"
           >
             Please fill out the form below
           </Typography>

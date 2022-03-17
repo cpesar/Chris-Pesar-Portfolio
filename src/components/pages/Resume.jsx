@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import { Typography, Grid, Box } from "@mui/material";
+import { Typography, Grid, Box, Card } from "@mui/material";
 
 import SchoolIcon from "@mui/icons-material/School";
 import ComputerIcon from "@mui/icons-material/Computer";
 
 function Resume() {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={0}>
       <Grid item xs={12} sm={6}>
         <Box
           sx={{
@@ -30,12 +30,19 @@ function Resume() {
             <Typography gutterBottom variant="h6" color="yellow">
               Towson University
             </Typography>
-            <span>Bachelors of Business Administration</span>
+            <span>
+              Bachelors of Business Administration
+              <br />
+              Concentration: Marketing{" "}
+            </span>
 
             <Typography gutterBottom variant="h6" color="red">
               University of Utah
             </Typography>
-            <span>Full stack web development bootcamp</span>
+            <span>
+              Full Stack Web Development Bootcamp <br />
+              Certificate{" "}
+            </span>
           </div>
         </Box>
       </Grid>
@@ -55,7 +62,49 @@ function Resume() {
           <Typography variant="h2" color="primary">
             Skills
           </Typography>
+
           <ComputerIcon style={{ fontSize: "80px" }} />
+
+          {/* <Grid container spacing={2} display="flex">
+            <Grid container item xs={6}>
+              Front end
+            </Grid>
+            <Grid container item xs={6}>
+              Back end
+            </Grid>
+          </Grid> */}
+          <div>
+            <Typography gutterBottom variant="h6" color="yellow">
+              Front-end
+            </Typography>
+            <span>
+              HTML5
+              <br />
+              CSS3
+              <br />
+              JavaScript
+              <br />
+              Reactjs
+              <br />
+              MaterialUI
+            </span>
+
+            <Typography gutterBottom variant="h6" color="red">
+              Back-end
+            </Typography>
+            <span>
+              MySQL
+              <br />
+              Node.js
+              <br />
+              Rest APIs
+              <br />
+              Express
+              <br />
+              MongoDB
+              <br />
+            </span>
+          </div>
         </Box>
       </Grid>
     </Grid>

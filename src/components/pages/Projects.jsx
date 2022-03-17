@@ -12,27 +12,6 @@ const ProjectContainer = styled.div`
 }
 `;
 
-// const classes = {
-//   root: {
-//     flexGrow: 1,
-//     overflow: "hidden",
-//   },
-//   paper: {
-//     // padding: 20,
-//     marginTop: 100,
-//     textAlign: "center",
-//     color: "white",
-//     fontSize: "60px",
-//     // fontFamily: "Roboto",
-//     fontWeight: "bold",
-//     height: 800,
-//     width: "96vw",
-//     backgroundColor: "transparent",
-//     // border: "1px solid white",
-//     overflow: "hidden",
-//   },
-// };
-
 function Projects() {
   const [project, setProject] = useState(ProjectData);
   return (
