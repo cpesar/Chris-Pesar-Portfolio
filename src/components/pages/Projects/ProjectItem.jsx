@@ -28,8 +28,12 @@ function ProjectItem({ item }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Website</Button>
-        <Button size="small">Github</Button>
+        <Button size="small">
+          <a href={item.site}>Website</a>
+        </Button>
+        <Button size="small">
+          <a href={item.repo}>Github</a>
+        </Button>
       </CardActions>
     </Card>
   );

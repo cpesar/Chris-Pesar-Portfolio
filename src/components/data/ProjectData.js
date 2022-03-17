@@ -1,79 +1,51 @@
-import mugshot from "../../assets/Headshots/uk_dl.png";
-// import mountains from "../../assets/Background/mtns.jpeg";
+import notes from "../../assets/Images/notetaker.png";
 import docker from "../../assets/Images/DockNFlock.png";
-import snow from "../../assets/Background/mtns-at-night.jpeg";
-import yung from "../../assets/Images/yung.png";
+import bestsellers from "../../assets/Images/bestsellers.png";
 import pizza from "../../assets/Images/pizza.svg.png";
 import weather from "../../assets/Images/weather.svg.png";
 
 const ProjectData = [
   {
-    title: "PizzaHunt",
-    img: mugshot,
-    description:
-      "An app that allows users to create edit and delete pizza recipes",
-    site: "https://pizza-hunting.herokuapp.com/",
-    repo: "https://github.com/cpesar/pizza-hut",
-  },
-
-  {
-    title: "ShopShop",
-    img: yung,
-    description:
-      "A simple e commerce app where users can add items to their cart and checkout using Stripe",
-    site: "https://the-online-store.herokuapp.com/",
-    repo: "https://github.com/cpesar/the-online-store",
-  },
-
-  {
     title: "DockNFlock",
     img: docker,
     description:
-      "An app that allows users to search for parking and event tickets in one conveienent place",
+      "An app that allows users to search for parking and event tickets in one conveienent place. This was a group project completed during my bootcamp at the University of Utah",
     site: "https://dock-n-flock.netlify.app/",
     repo: "https://github.com/cpesar/dock-n-flock",
   },
-
   {
     title: "BestSellers",
-    img: snow,
+    img: bestsellers,
     description:
-      "A simple app that allows a user to search for a book within a selected category. The user can then checkout their item which will link them to Amazon",
+      "An app that allows a user to search for a book within a selected category. The app uses the Googlebooks api to retrieve the book data. Once the user makes a selection they are redirected to Amazon's website where they can purchase the book.",
     site: "https://cpesar.github.io/the-best-sellers/",
     repo: "https://github.com/cpesar/the-best-sellers",
   },
 
   {
-    title: "GoogleBooks",
-    img: yung,
-    description: "Simple book search app",
-    site: "https://the-book-store-2.herokuapp.com/",
-    repo: "https://github.com/cpesar/the-book-store-2",
+    title: "PizzaHunt",
+    img: pizza,
+    description: "Users can Create Read Update and Delete pizza recipes",
+    site: "https://pizza-hunting.herokuapp.com/",
+    repo: "https://github.com/cpesar/pizza-hut",
   },
 
   {
-    title: "mugshotApp",
+    title: "Note-Taker",
+    img: notes,
+    description:
+      "A simple note-taker application where users can write, save, and delete notes. The app uses Express and mysql2.",
+    site: "https://pesar-note-taker.herokuapp.com/",
+    repo: "https://github.com/cpesar/take-notes",
+  },
+
+  {
+    title: "Weather App",
     img: weather,
     description:
       "A user can search for weather by city state or zipcode. Uses the openweather api",
     site: "https://cpesar.github.io/weather-dashboard-refactor/",
     repo: "https://github.com/cpesar/weather-dashboard-refactor",
-  },
-
-  {
-    title: "DeepThoughts",
-    img: pizza,
-    description: "A thought blog",
-    site: "https://deep-thinker.herokuapp.com/",
-    repo: "https://github.com/cpesar/deep-thoughts",
-  },
-
-  {
-    title: "ZooAnimals",
-    img: mugshot,
-    description: "A zoo animal blog that uses CRUD routes",
-    site: "https://zoanimals.herokuapp.com/",
-    repo: "https://github.com/cpesar/zookeeper",
   },
 ];
 
