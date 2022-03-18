@@ -101,6 +101,7 @@ function Resume() {
             >
               <div>HTML5</div>
               <div>CSS3</div>
+              <div>Node.js</div>
               <div>Bootstrap</div>
               <div>MaterialUI</div>
               <div>Reactjs</div>
@@ -120,7 +121,6 @@ function Resume() {
               color="primary"
               // fontWeight="bold"
             >
-              <div>Node.js</div>
               <div>Restful APIs</div>
               <div>Express.js</div>
               <div>MySQL</div>
