@@ -29,8 +29,9 @@ function Resume() {
           item
           xs={12}
           sx={{
-            paddingTop: "200px",
+            paddingTop: "100px",
             paddingBottom: "-10px",
+            marginBottom: "400px",
           }}
         >
           <Paper style={classes.paper} elevation="0">
