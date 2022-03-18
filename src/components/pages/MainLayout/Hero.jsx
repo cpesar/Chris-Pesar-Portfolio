@@ -85,7 +85,7 @@ const Hero = () => {
           }}
         >
           <Typography variant="h1 align center">
-            <Paper style={classes.paper}>
+            <Paper style={classes.paper} elevation="0">
               <Typography variant="h1" fontSize="60px" marginTop={2}>
                 Hi. I'm Chris <br />{" "}
                 <span ref={textRef} style={{ color: "yellow" }}></span>
@@ -95,7 +95,7 @@ const Hero = () => {
           </Typography>
 
           <Typography variant="h5 align center">
-            <Paper style={classes.paper}>
+            <Paper style={classes.paper} elevation="0">
               <Typography variant="h2" fontSize="30px">
                 I like to build things on the internet. <br />
               </Typography>

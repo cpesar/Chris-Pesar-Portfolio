@@ -1,113 +1,136 @@
-import * as React from "react";
-
-import { Typography, Grid, Box } from "@mui/material";
+import React from "react";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+import { Typography } from "@mui/material";
 
 import SchoolIcon from "@mui/icons-material/School";
 import ComputerIcon from "@mui/icons-material/Computer";
 
+const classes = {
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: 10,
+    marginTop: 10,
+    textAlign: "center",
+    height: 600,
+    width: "96vw",
+    color: "white",
+    backgroundColor: "transparent",
+  },
+};
+
 function Resume() {
   return (
-    <Grid container spacing={0}>
-      <Grid item xs={12} sm={6}>
-        <Box
+    <>
+      <Grid container>
+        <Grid
+          item
+          xs={12}
           sx={{
-            marginTop: 10,
-            textAlign: "center",
-            color: "white",
-            backgroundColor: "transparent",
-            // border: "5px solid pink",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            paddingTop: "200px",
+            paddingBottom: "-10px",
           }}
         >
-          <Typography variant="h2" color="primary">
-            Education
-          </Typography>
-          <SchoolIcon style={{ fontSize: "80px" }} />
+          <Paper style={classes.paper} elevation="0">
+            <Typography variant="h1" fontSize="60px" marginTop={2}>
+              Education
+              <br />
+              <SchoolIcon
+                style={{
+                  fontSize: "80px",
+                  paddingLeft: "20px",
+                  marginTop: "10px",
+                }}
+              />
+            </Typography>
 
-          <div>
-            <Typography gutterBottom variant="h6" color="yellow">
+            <Typography
+              color="yellow"
+              variant="parograph"
+              fontSize="40px"
+              marginTop={2}
+            >
               Towson University
             </Typography>
-            <span>
-              Bachelors of Business Administration
-              <br />
-              Concentration: Marketing{" "}
-            </span>
 
-            <Typography gutterBottom variant="h6" color="red">
+            <div>Bachelor of Science</div>
+            <div>Business Administration</div>
+            <div>Concentration: Marketing</div>
+
+            <Typography
+              color="red"
+              variant="parograph"
+              fontSize="40px"
+              marginTop={2}
+            >
               University of Utah
             </Typography>
-            <span>
-              Full Stack Web Development Bootcamp <br />
-              Certificate{" "}
-            </span>
-          </div>
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Box
-          sx={{
-            marginTop: 10,
-            textAlign: "center",
-            color: "white",
-            backgroundColor: "transparent",
-            // border: "5px solid pink",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Typography variant="h2" color="primary">
-            Skills
-          </Typography>
+            <div>Full Stack Web Development Bootcamp</div>
+            <div>Certificate</div>
+          </Paper>
 
-          <ComputerIcon style={{ fontSize: "80px" }} />
-
-          {/* <Grid container spacing={2} display="flex">
-            <Grid container item xs={6}>
-              Front end
-            </Grid>
-            <Grid container item xs={6}>
-              Back end
-            </Grid>
-          </Grid> */}
-          <div>
-            <Typography gutterBottom variant="h6" color="yellow">
-              Front-end
+          <Paper style={classes.paper} elevation="0">
+            <Typography variant="h1" fontSize="60px" marginTop={2}>
+              Skills
+              <br />
+              <ComputerIcon
+                style={{
+                  fontSize: "60px",
+                  paddingLeft: "20px",
+                  marginTop: "10px",
+                }}
+              />
             </Typography>
-            <span>
-              HTML5
-              <br />
-              CSS3
-              <br />
-              JavaScript
-              <br />
-              Reactjs
-              <br />
-              MaterialUI
-            </span>
 
-            <Typography gutterBottom variant="h6" color="red">
-              Back-end
+            <Typography
+              color="pink"
+              variant="parograph"
+              fontSize="40px"
+              marginTop={2}
+            >
+              Front-End
             </Typography>
-            <span>
-              MySQL
-              <br />
-              Node.js
-              <br />
-              Rest APIs
-              <br />
-              Express
-              <br />
-              MongoDB
-              <br />
-            </span>
-          </div>
-        </Box>
+            <Typography
+              variant="parograph"
+              fontSize="20px"
+              color="primary"
+              // fontWeight="bold"
+            >
+              <div>HTML5</div>
+              <div>CSS3</div>
+              <div>Bootstrap</div>
+              <div>MaterialUI</div>
+              <div>Reactjs</div>
+            </Typography>
+
+            <Typography
+              color="pink"
+              variant="parograph"
+              fontSize="40px"
+              marginTop={2}
+            >
+              Back-End
+            </Typography>
+            <Typography
+              variant="parograph"
+              fontSize="20px"
+              color="primary"
+              // fontWeight="bold"
+            >
+              <div>Node.js</div>
+              <div>Restful APIs</div>
+              <div>Express.js</div>
+              <div>MySQL</div>
+              <div>MongoDB</div>
+              <div>AWS: Amplify, Cognito, S3</div>
+              <div>Firebase: Firestore</div>
+            </Typography>
+          </Paper>
+        </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 }
 

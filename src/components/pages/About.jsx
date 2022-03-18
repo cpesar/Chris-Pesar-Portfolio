@@ -17,6 +17,7 @@ const About = () => {
       <Grid container>
         <Grid item xs={12}>
           <Paper
+            elevation="0"
             sx={{
               padding: 20,
               marginTop: -10,
